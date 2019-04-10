@@ -9,5 +9,8 @@
         <item>Expert</item>
     </string-array>
     <string name="play">PLAY!</string>
-    <string name="level">Level 7</string>
+    <string name="level">Level: ?</string>
+    <string name="score">Score 0/10</string>
+    <string name="time">Time remaining: 0 seconds</string>
+    <string name="question">question</string>
 </resources>

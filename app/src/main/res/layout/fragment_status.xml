@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Time remaining: 0 seconds"
+        android:text="@string/time"
         style="@style/large" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Score 0/10"
+        android:text="@string/score"
         style="@style/large" />
 
 </android.support.v7.widget.LinearLayoutCompat>
