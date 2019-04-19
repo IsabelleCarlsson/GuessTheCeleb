@@ -40,6 +40,7 @@ public class GameFragment extends Fragment {
             level = Difficulty.valueOf(selection.toUpperCase());
             listener.onUpdate((State.START_GAME));
         });
+
         return view;
     }
 

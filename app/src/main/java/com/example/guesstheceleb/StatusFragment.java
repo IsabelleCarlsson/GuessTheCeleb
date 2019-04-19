@@ -3,6 +3,7 @@ package com.example.guesstheceleb;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,17 +24,30 @@ public class StatusFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_status, container, false);
+        View view = inflater.inflate(R.layout.fragment_status, container, false);
+
+        // setup access to its views
+        message = view.findViewById(R.id.message);
+        score = view.findViewById(R.id.score);
+
+        return view;
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         listener = (StateListener) context;
+    }
+
+    public void setMessage(String text) {
+        message.setText(text);
+    }
+
+    public void setScore(String text) {
+        score.setText(text);
     }
 }
